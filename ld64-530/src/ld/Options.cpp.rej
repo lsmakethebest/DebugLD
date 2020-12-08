@@ -1,0 +1,11 @@
+--- src/ld/Options.cpp	2018-09-18 15:01:35.000000000 -0700
++++ src/ld/Options.cpp	2019-01-18 21:13:17.000000000 -0800
+@@ -4667,7 +4667,7 @@
+ 			break;
+ 		case Options::kDyld:
+ 			// arm64e has support for compressed LINKEDIT.
+-			if ( (fArchitecture == CPU_TYPE_ARM64) && (fSubArchitecture == CPU_SUBTYPE_ARM64_E) )
++			if ( (fArchitecture == CPU_TYPE_ARM64) && (fSubArchitecture == CPU_SUBTYPE_ARM64E) )
+ 				break;
+ 		case Options::kPreload:
+ 		case Options::kStaticExecutable:
